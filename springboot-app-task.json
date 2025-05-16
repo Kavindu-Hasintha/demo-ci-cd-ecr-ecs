@@ -90,6 +90,5 @@
   },
   "registeredAt": "2025-05-16T13:48:19.031Z",
   "registeredBy": "arn:aws:iam::417705460453:user/aws-ecs-user",
-  "enableFaultInjection": false,
   "tags": []
 }

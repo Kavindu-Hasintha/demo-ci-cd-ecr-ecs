@@ -8,4 +8,5 @@ import java.util.List;
 public interface UserService {
     User saveUser(UserDto userDto);
     List<User> getUsers();
+    User getUserById(Long id);
 }
