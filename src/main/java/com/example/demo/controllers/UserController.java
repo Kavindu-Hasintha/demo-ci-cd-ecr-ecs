@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @GetMapping("/get-user-by-id/{id}")
-    public ResponseEntity<User> getUserById(@RequestParam Long id) {
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
         return ResponseEntity.ok(userService.getUserById(id));
     }
 }
