@@ -30,4 +30,9 @@ public class UserController {
     public ResponseEntity<User> saveUser(@RequestBody UserDto userDto) {
         return ResponseEntity.ok(userService.saveUser(userDto));
     }
+
+    @GetMapping("/get-user-by-id/{id}")
+    public ResponseEntity<User> getUserById(@RequestParam Long id) {
+        return ResponseEntity.ok(userService.getUserById(id));
+    }
 }
